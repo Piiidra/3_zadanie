@@ -24,5 +24,29 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (String.IsNullOrEmpty(number1.Text) || String.IsNullOrEmpty(number2.Text))
+            {
+                MessageBox.Show("Заполните поля");
+                return;
+            }
+
+            try
+            {
+                equals.Content = Int32.Parse(number1.Text) + Int32.Parse(number2.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Неверный тип вводимых данных");
+                return;
+            }
+        }
+
+        private void ButtonExit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
