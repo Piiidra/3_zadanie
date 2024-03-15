@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="number1" HorizontalAlignment="Left" Height="23" Margin="181,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="number2" HorizontalAlignment="Left" Height="23" Margin="493,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="+" HorizontalAlignment="Center" Margin="0,119,0,0" VerticalAlignment="Top" FontSize="32" Padding="0"/>
+        <Label x:Name="equals" Content="" HorizontalAlignment="Left" Margin="413,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.178,0.257" Width="152"/>
+        <Label Content="=" HorizontalAlignment="Left" Margin="355,190,0,0" VerticalAlignment="Top" FontSize="32" Padding="0"/>
+        <Button Content="Сложить" HorizontalAlignment="Left" Margin="365,305,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Выйти" HorizontalAlignment="Left" Margin="365,345,0,0" VerticalAlignment="Top" Width="75" Click="ButtonExit_Click"/>
     </Grid>
 </Window>
